@@ -1,0 +1,26 @@
+@import 'carbon-components/scss/globals/scss/import-once';
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/typography';
+@import '../../globals/scss/colors';
+
+@include exports('infra-structured-ilst') {
+  .infra--structured-list-row {
+    &.bx--structured-list-row--header-row {
+      border-bottom-color: $infra__structured-list-border-color;
+    }
+
+    .bx--toolbar-action {
+      padding: 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    .bx--toolbar-action + .bx--toolbar-action {
+      margin-left: rem(8px);
+    }
+
+    .bx--structured-list-td .bx--btn--ghost {
+      margin-left: calc(#{rem(-8px)} - 2px);
+    }
+  }
+}

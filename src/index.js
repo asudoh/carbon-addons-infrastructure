@@ -25,3 +25,7 @@ export {
   SelectableCardGroup,
   default as SelectableCard,
 } from './components/SelectableCard';
+
+export { StructuredListRow } from './components/StructuredList';
+
+export { default as ToolbarAction } from './components/ToolbarAction';

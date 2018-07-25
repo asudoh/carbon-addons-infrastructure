@@ -1,3 +1,15 @@
+export {
+  InvalidIcon,
+  TableBatchAction,
+  TableBatchEditable,
+  TableBatchEditableContainer,
+  TableBatchEditActions,
+  TableBatchEditDeleteCell,
+  TableBatchEditDeleteHeader,
+  TableBatchEditGhostSelect,
+  TableBatchEditTextInput,
+} from './components/DataTable';
+
 export { default as GhostSelect } from './components/GhostSelect';
 
 export {

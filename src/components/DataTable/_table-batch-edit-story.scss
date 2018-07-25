@@ -1,0 +1,46 @@
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
+
+.infra-example--endpoint-value-cell-default {
+  padding: 0 17px;
+}
+
+th.infra-example--value-cell {
+  width: rem(320px);
+}
+
+td.infra-example--delete-cell {
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      fill: $text-02;
+    }
+  }
+}
+
+.infra-example--port-select {
+  .infra--ghost-select-overlay {
+    & > * {
+      margin-left: rem(8px);
+    }
+
+    & > label:first-of-type {
+      margin-left: rem(16px);
+    }
+
+    .bx--text-input {
+      order: 0;
+    }
+  }
+}
+
+.infra-example--port-input {
+  min-width: auto;
+  width: rem(80px);
+}

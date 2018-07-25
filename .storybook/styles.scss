@@ -3,4 +3,5 @@ $css--reset: true;
 
 @import '~carbon-components/scss/globals/scss/styles';
 @import '~carbon-addons-cloud/scss/styles';
+@import '../src/components/DataTable/table-batch-edit-story';
 @import '../src/index';

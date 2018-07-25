@@ -64,17 +64,64 @@ const GhostSelect = ({
 };
 
 GhostSelect.propTypes = {
+  /**
+   * The child nodes.
+   */
   children: PropTypes.node,
+
+  /**
+   * The CSS class names.
+   */
   className: PropTypes.string,
+
+  /**
+   * The element ID for `<select>`.
+   */
   id: PropTypes.string.isRequired,
+
+  /**
+   * `true` to use the inline mode style.
+   */
   inline: PropTypes.bool,
-  labelText: PropTypes.string,
+
+  /**
+   * The label text.
+   */
+  labelText: PropTypes.node,
+
+  /**
+   * An event handler for change in selection.
+   */
   onChange: PropTypes.func,
+
+  /**
+   * `true` to show the disabled UI.
+   */
   disabled: PropTypes.bool,
+
+  /**
+   * The initial value.
+   */
   defaultValue: PropTypes.any,
+
+  /**
+   * The icon description.
+   */
   iconDescription: PropTypes.string.isRequired,
+
+  /**
+   * `true` to hide the `<label>`.
+   */
   hideLabel: PropTypes.bool,
+
+  /**
+   * `true` to use the light mode style.
+   */
   light: PropTypes.bool,
+
+  /**
+   * The UI to replace the UI showing the selected item with.
+   */
   overlay: PropTypes.node,
 };
 

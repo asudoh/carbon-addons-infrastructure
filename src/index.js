@@ -1,3 +1,5 @@
+export { default as GhostSelect } from './components/GhostSelect';
+
 export {
   LocationCardContent,
   LocationCardSelect,

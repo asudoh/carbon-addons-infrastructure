@@ -1,0 +1,62 @@
+//-----------------------------
+// Select
+//-----------------------------
+
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/import-once';
+
+@include exports('infra-ghost-select') {
+  .infra--ghost-select-overlay {
+    @include font-family;
+    @include typescale('zeta');
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: rem(40px);
+    height: rem(40px);
+    order: 2;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    [data-invalid] & {
+      bottom: rem(22px);
+      right: rem(56px);
+    }
+
+    & ~ .bx--select-input {
+      opacity: 0;
+    }
+
+    .bx--data-table-v2-container.bx--data-table-v2--editing & {
+      height: 3rem;
+
+      & ~ .bx--form-requirement {
+        position: absolute;
+        right: rem(40px);
+        top: calc(50% - 8px);
+        margin-top: 0;
+
+        .bx--tooltip__trigger > div {
+          width: 16px;
+          height: 16px;
+        }
+
+        svg[name='subtract--glyph'] {
+          transform: rotate(-45deg);
+          transform-origin: center;
+
+          path,
+          polygon,
+          circle {
+            fill: $support-01;
+          }
+        }
+      }
+    }
+
+    .bx--data-table-v2-container.bx--data-table-v2--editing [data-invalid] & {
+      bottom: 0;
+    }
+  }
+}
